@@ -15,3 +15,6 @@ Brews 'R Us is a full stack application that allows the user to locate Brewery's
 
 ## Link to GitHub Repo
 [Brewery-Finder](https://github.com/HurleySquared/brewery-finder)
+
+## Contributions
+- Created and maintained by **Chris J Mears** and *Wandering Leaf Studios LLC.*
