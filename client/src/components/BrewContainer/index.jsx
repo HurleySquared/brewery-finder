@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Header from "../Header";
+import Search from "../Search";
 import API from "../../utils/API";
 import BrewContext from "../../utils/BrewContext";
 
@@ -11,8 +12,8 @@ class BrewContainer extends Component {
 
   componentDidMount() {
     this.searchBrews("charlotte");
-  };
-  
+  }
+
   searchBrews = query => {
     API.search(query)
       .then(res => this.setState({ result: res.data}))
@@ -42,6 +43,7 @@ class BrewContainer extends Component {
         }}
       >
         <Header />
+        <Search />
 
       </BrewContext.Provider>
     )
