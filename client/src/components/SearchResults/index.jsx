@@ -1,23 +1,22 @@
-// import React from "react";
-// import BrewContext from "../../utils/BrewContext";
+import React from "react";
+import BrewContext from "../../utils/BrewContext";
 
-// function searchResults() {
-//   return (
-//     <BrewContext.Consumer>
-//       {({search, handleInputChange, handleFormSubmit}) => (
-//         <div>
-//           {/* <ul className="brew-container">
-//               {brews.map(brewski => (
-//                 <li className="brewsList" key={brewski.id}>
-//                   {brewski.name}: <a 
-//                     href={brewski.website_url} target="_blank nonreferrer">{brewski.website_url}</a>
-//                 </li>
-//               ))}
-//             </ul> */}
-//         </div>
-//       )}
-//     </BrewContext.Consumer>
-//   )
-// }
+function searchResults() {
+  return (
+     <BrewContext.Consumer>
+      {({results: {name, website_url, phone}}) => (
+        <div>
+          <h2>Breweries in Your City</h2>
+          <ul className="brew-container">
+              <li className="brewsList">
+                {name}, Phone: {phone}<a 
+                  href={website_url} target="_blank nonreferrer">{website_url}</a>
+              </li>
+            </ul>
+        </div>
+      )}
+    </BrewContext.Consumer>
+  );
+}
 
-// export default searchResults;
+export default searchResults;

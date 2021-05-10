@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Header from "../Header";
-import Search from "../Search";
+import BrewSearch from "../BrewSearch";
+import SearchResults from "../SearchResults";
 import API from "../../utils/API";
 import BrewContext from "../../utils/BrewContext";
 
@@ -31,6 +32,8 @@ class BrewContainer extends Component {
   handleFormSubmit = event => {
     event.preventDefault();
     this.searchBrews(this.state.search);
+    console.log(this.state.search);
+    console.log(this.state)
   };
 
   render() {
@@ -43,10 +46,10 @@ class BrewContainer extends Component {
         }}
       >
         <Header />
-        <Search />
-
+        <BrewSearch />
+        <SearchResults />
       </BrewContext.Provider>
-    )
+    );
   }
 }
 
