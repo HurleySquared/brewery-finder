@@ -48,7 +48,7 @@ class BrewContainer extends Component {
       >
         <Header />
         <BrewSearch />
-        <SearchResults />
+        <SearchResults heading={this.state.search || "Charlotte"} />
       </BrewContext.Provider>
     );
   }

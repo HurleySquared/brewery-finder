@@ -16,7 +16,7 @@ function brewSearch() {
                 name="search"
                 type="text" 
                 id="search" 
-                placeholder="charlotte"
+                placeholder="Charlotte"
                 />
               <button 
                 onClick={handleFormSubmit}
