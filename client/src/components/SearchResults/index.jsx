@@ -3,20 +3,30 @@ import BrewContext from "../../utils/BrewContext";
 
 function searchResults() {
   return (
-     <BrewContext.Consumer>
-      {({results: {name, website_url, phone}}) => (
-        <div>
-          <h2>Breweries in Your City</h2>
-          <ul className="brew-container">
-              <li className="brewsList">
-                {name}, Phone: {phone}<a 
-                  href={website_url} target="_blank nonreferrer">{website_url}</a>
-              </li>
-            </ul>
-        </div>
+    <BrewContext.Consumer>
+      {({ result, search }) => (
+      <>
+        <h2>Breweries in {search.toUpperCase(search)}</h2>
+        <ul className="brew-container">
+          {result.map(brewski => {
+            return (
+              <li key={brewski.id} className="brewsList">
+              {brewski.name}:
+                {/* <a 
+                  href={website_url} 
+                  target="_blank nonreferrer"
+                  className="Link"
+                >
+                  {website_url}
+                </a> */}
+            </li>
+            )
+          })}
+        </ul>
+      </>
       )}
     </BrewContext.Consumer>
-  );
+  )
 }
 
 export default searchResults;

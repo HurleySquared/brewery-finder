@@ -8,7 +8,8 @@ import BrewContext from "../../utils/BrewContext";
 class BrewContainer extends Component {
   state = {
     results: {},
-    search: ""
+    search: "",
+    result: []
   };
 
   componentDidMount() {
@@ -33,7 +34,7 @@ class BrewContainer extends Component {
     event.preventDefault();
     this.searchBrews(this.state.search);
     console.log(this.state.search);
-    console.log(this.state)
+    console.log(this.state.result)
   };
 
   render() {
