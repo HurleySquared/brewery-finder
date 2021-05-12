@@ -1,3 +1,18 @@
 h3 {
   padding-left: 8px;
 }
+
+/* .brew-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
+
+.brewsList {
+  list-style-type: none;
+  padding: 4px;
+}
+
+a {
+  text-decoration: none;
+}
