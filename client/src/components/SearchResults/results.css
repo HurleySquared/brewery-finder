@@ -1,5 +1,6 @@
 h3 {
   padding: 4px;
+  text-align: center;
 }
 
 .brew-container {
@@ -44,5 +45,24 @@ a {
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .brew-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .brewHead {
+    width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 }

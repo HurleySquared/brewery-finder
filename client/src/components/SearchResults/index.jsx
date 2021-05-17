@@ -16,33 +16,34 @@ function searchResults(props) {
   return (
     <BrewContext.Consumer>
       {({ result }) => (
-      <div className="results-container">
-        <h3>Breweries in {props.heading}</h3>
-        <ul className="brew-container">
-          {result.map(brewski => {
-            return (
-              <li key={brewski.id} className="brewsList">
-                <div className="brewHead">
-                  <h4>{brewski.name}</h4>
+        <div className="results-container">
+          <h3>Breweries in {props.heading}</h3>
+          <ul className="brew-container">
+            {result.map(brewski => {
+              return (
+                <li key={brewski.id} className="brewsList">
+                  <div className="brewHead">
+                    <h4>{brewski.name}</h4>
                     <a href="tel:555-555-5555">
-                        {formatPhoneNumber(brewski.phone)}
+                      {formatPhoneNumber(brewski.phone)}
                     </a>
-                </div>
-                <a 
-                  href={brewski.website_url} 
-                  target="_blank nonreferrer"
-                  className="Link"
-                >
-                  {brewski.website_url}
-                </a>
-                <address className="address">
-                  {brewski.street} {brewski.city}, {brewski.state} {brewski.postal_code}
-                </address>
-            </li>
-            )
-          })}
-        </ul>
-      </div>
+                    <br/>
+                    <a
+                      href={brewski.website_url}
+                      target="_blank nonreferrer"
+                      className="Link"
+                    >
+                      {brewski.website_url}
+                    </a>
+                  </div>
+                    <address className="address">
+                      {brewski.street} {brewski.city}, {brewski.state} {brewski.postal_code}
+                    </address>
+                </li>
+              )
+            })}
+          </ul>
+        </div>
       )}
     </BrewContext.Consumer>
   )
