@@ -1,28 +1,28 @@
 h3 {
   padding: 4px;
 }
-.results-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  flex-wrap: wrap;
+
+.brew-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 4px;
+  row-gap: 20px;
+  grid-template-areas: 
+  "li li";
 }
 
-/* .brew-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-} */
+.item-a {
+  grid-area: li;
+  place-self: center;
+}
 
 .brewsList {
   list-style-type: none;
-  margin: 20px;
-  padding: 8px;
   border: 2px solid black;
   border-radius: 4px;
-  width: 80%;
-  height: fit-content;
+  height: 180px;
+  width: 90%;
   background-color: #f5ac59;
   box-shadow: 4px 4px 10px #3d2203;
 }
@@ -33,4 +33,16 @@ h3 {
 
 a {
   text-decoration: none;
+}
+
+/* Media Query for Mobile Screens */
+
+@media only screen and (max-width: 680px) {
+  .brew-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
 }
