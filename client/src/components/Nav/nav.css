@@ -1,5 +1,10 @@
+.nav-container {
+  margin-bottom: 4px;
+}
+
 .nav-container a {
   text-decoration: none;
   color: black;
+  font-weight: 500;
   padding: 8px;
 }

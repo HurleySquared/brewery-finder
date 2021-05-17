@@ -1,4 +1,28 @@
 .search-bar {
   margin: 20px;
   padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+label {
+  font-weight: 500;
+}
+
+#search {
+  margin-top: 12px;
+  height: 20px;
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid #333;
+}
+
+#brewBtn {
+  color: #333;
+  padding-left: 4px;
+}
+
+#brewBtn:hover {
+  cursor: grabbing;
 }

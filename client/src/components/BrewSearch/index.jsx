@@ -1,5 +1,6 @@
 import React from "react";
 import BrewContext from "../../utils/BrewContext";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import "./search.css";
 
 function brewSearch() {
@@ -7,24 +8,22 @@ function brewSearch() {
     <BrewContext.Consumer>
       {({ search, handleInputChange, handleFormSubmit }) => (
         <form>
-          <div>
-            <div className="search-bar">
-              <label htmlFor="search">Search A City</label>
-              <input
-                onChange={handleInputChange}
-                value={search}
-                name="search"
-                type="text" 
-                id="search" 
-                placeholder="Charlotte"
-                />
-              <button 
-                onClick={handleFormSubmit}
-                id="brewBtn"
-              >
-                Search
-              </button>
-            </div>
+          <div className="search-bar">
+            <label htmlFor="search">Search A City</label>
+            <span>
+            <input
+              onChange={handleInputChange}
+              value={search}
+              name="search"
+              type="text"
+              id="search"
+              placeholder="Charlotte"
+            />
+            <FontAwesomeIcon icon="search"
+              onClick={handleFormSubmit}
+              id="brewBtn"
+            />
+            </span>
           </div>
         </form>
       )}
