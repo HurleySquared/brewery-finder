@@ -4,8 +4,8 @@ h1 {
 }
 
 .header {
-  background-color: rgb(233, 220, 43);
+  background-color: #f5ac59;
   display: grid;
-  width: 100%;
   grid-template-rows: 80px 32px;
+  justify-items: center;
 }

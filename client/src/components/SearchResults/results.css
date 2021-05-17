@@ -1,5 +1,12 @@
 h3 {
-  padding-left: 8px;
+  padding: 4px;
+}
+.results-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
 }
 
 /* .brew-container {
@@ -10,7 +17,18 @@ h3 {
 
 .brewsList {
   list-style-type: none;
-  padding: 4px;
+  margin: 20px;
+  padding: 8px;
+  border: 2px solid black;
+  border-radius: 4px;
+  width: 80%;
+  height: fit-content;
+  background-color: #f5ac59;
+  box-shadow: 4px 4px 10px #3d2203;
+}
+
+.brewsList:hover {
+  box-shadow: -4px -4px 10px #3d2203;
 }
 
 a {
