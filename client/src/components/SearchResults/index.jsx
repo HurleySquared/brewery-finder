@@ -16,8 +16,9 @@ function searchResults(props) {
   return (
     <BrewContext.Consumer>
       {({ result }) => (
+        <>
+        <h3>Breweries in {props.heading}</h3>
         <div className="results-container">
-          <h3>Breweries in {props.heading}</h3>
           <ul className="brew-container">
             {result.map(brewski => {
               return (
@@ -44,6 +45,7 @@ function searchResults(props) {
             })}
           </ul>
         </div>
+        </>
       )}
     </BrewContext.Consumer>
   )

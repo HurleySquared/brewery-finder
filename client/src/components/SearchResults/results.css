@@ -3,6 +3,11 @@ h3 {
   text-align: center;
 }
 
+.results-container {
+  display: flex;
+  justify-content: center;
+}
+
 .brew-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -12,7 +17,8 @@ h3 {
   grid-template-areas: 
   "li li";
   text-align: center;
-  margin: 20px;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .item-a {

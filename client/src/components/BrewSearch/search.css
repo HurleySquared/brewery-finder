@@ -25,5 +25,6 @@ label {
 }
 
 #brewBtn:hover {
-  cursor: grabbing;
+  cursor: pointer;
+  transform: translateY(-4px);
 }

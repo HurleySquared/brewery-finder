@@ -22,7 +22,7 @@ function brewSearch() {
             <FontAwesomeIcon icon="search"
               onClick={handleFormSubmit}
               id="brewBtn"
-            />
+              />
             </span>
           </div>
         </form>
