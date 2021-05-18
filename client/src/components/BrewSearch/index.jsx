@@ -20,6 +20,7 @@ function brewSearch() {
               placeholder="Charlotte"
             />
             <FontAwesomeIcon icon="search"
+              height="32"
               onClick={handleFormSubmit}
               id="brewBtn"
             />

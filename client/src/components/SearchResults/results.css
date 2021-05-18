@@ -11,11 +11,17 @@ h3 {
   row-gap: 20px;
   grid-template-areas: 
   "li li";
+  text-align: center;
 }
 
 .item-a {
   grid-area: li;
   place-self: center;
+}
+
+.brewHead {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .brewsList {
@@ -26,6 +32,7 @@ h3 {
   width: 90%;
   background-color: #f5ac59;
   box-shadow: 4px 4px 10px #3d2203;
+  padding: 4px;
 }
 
 .brewsList:hover {
@@ -59,8 +66,12 @@ a {
 
   }
 
+  .brewsList {
+    text-align: center;
+  }
+
   .brewHead {
-    width: 80%;
+    width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
