@@ -12,7 +12,7 @@ h3 {
   grid-template-areas: 
   "li li";
   text-align: center;
-  margin: 0;
+  margin: 20px;
 }
 
 .item-a {
