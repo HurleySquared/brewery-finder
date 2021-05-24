@@ -3,22 +3,22 @@ h3 {
   text-align: center;
 }
 
-.results-container {
+/* .results-container {
   display: flex;
   justify-content: center;
-}
+} */
 
-.brew-container {
+ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  column-gap: 4px;
   row-gap: 20px;
   grid-template-areas: 
   "li li";
   text-align: center;
-  padding: 0 !important;
-  margin: 0 !important;
+  padding-inline-start: 0;
+  padding: 12px;
+  margin: 0;
 }
 
 .item-a {

@@ -8,4 +8,5 @@ h1 {
   display: grid;
   grid-template-rows: 80px 32px;
   justify-items: center;
+  width: 100% !important;
 }

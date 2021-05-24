@@ -18,7 +18,7 @@ function searchResults(props) {
       {({ result }) => (
         <>
         <h3>Breweries in {props.heading}</h3>
-        <div className="results-container">
+        {/* <div className="results-container"> */}
           <ul className="brew-container">
             {result.map(brewski => {
               return (
@@ -26,7 +26,7 @@ function searchResults(props) {
                   <div className="brewHead">
                     <h4>{brewski.name}</h4>
                     <a href="tel:555-555-5555">
-                      {formatPhoneNumber(brewski.phone)}
+                      {formatPhoneNumber(brewski.phone) || "- No Phone Number -"}
                     </a>
                     <br/>
                     <a
@@ -34,7 +34,7 @@ function searchResults(props) {
                       target="_blank nonreferrer"
                       className="Link"
                     >
-                      {brewski.website_url}
+                      {brewski.website_url || "- No Website Available -"}
                     </a>
                   </div>
                     <address className="address">
@@ -44,7 +44,7 @@ function searchResults(props) {
               )
             })}
           </ul>
-        </div>
+        {/* </div> */}
         </>
       )}
     </BrewContext.Consumer>
