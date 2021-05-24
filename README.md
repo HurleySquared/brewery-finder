@@ -1,7 +1,7 @@
 # Brews 'R Us
 
 ## Description
-Brews 'R Us is a full stack application that allows the user to locate Brewery's near them. With options to filter through, they can better choose which brewery fits their needs.
+Brews 'R Us is a Front End application that allows the user to locate Brewery's near them.
 
 ## Technologies Used
 - Open Brewery DB
@@ -9,12 +9,13 @@ Brews 'R Us is a full stack application that allows the user to locate Brewery's
 - React.js
 - Node.js
 - JavaScript, JSX
-- Database(TBD)
-- Express
 - CSS3
 
 ## Link to GitHub Repo
 [Brewery-Finder](https://github.com/HurleySquared/brewery-finder)
+
+## Heroku Deployed Link
+[Brewery-Finder]()
 
 ## Contributions
 - Created and maintained by **Chris J Mears** and *Wandering Leaf Studios LLC.*
