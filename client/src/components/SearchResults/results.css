@@ -42,8 +42,8 @@ ul {
   width: 90%;
   background-color: #f5ac59;
   box-shadow: 4px 4px 10px #3d2203;
-  padding: 4px;
-  font-family: Duru;
+  padding: 8px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .brewsList:hover {
@@ -52,6 +52,11 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+.address {
+  font-weight: 500;
+  padding: 8px;
 }
 
 /* Media Query for Mobile Screens */

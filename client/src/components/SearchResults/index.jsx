@@ -25,16 +25,16 @@ function searchResults(props) {
                 <li key={brewski.id} className="brewsList">
                   <div className="brewHead">
                     <h4>{brewski.name}</h4>
-                    <a href="tel:555-555-5555">
-                      {formatPhoneNumber(brewski.phone) || "- No Phone Number -"}
+                    <a href="tel:555-555-5555" className="phone-num">
+                      {formatPhoneNumber(brewski.phone) || '- No Phone Number -'}
                     </a>
                     <br/>
                     <a
                       href={brewski.website_url}
                       target="_blank nonreferrer"
-                      className="Link"
+                      className="web-link"
                     >
-                      {brewski.website_url || "- No Website Available -"}
+                      {brewski.website_url || '- No Website Available -'}
                     </a>
                   </div>
                     <address className="address">
