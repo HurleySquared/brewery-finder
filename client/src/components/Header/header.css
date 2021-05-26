@@ -1,6 +1,10 @@
 h1 {
   color: #333;
-  padding: 8px;
+  padding: 4px;
+  font-weight: 500;
+  font-family: 'Vast Shadow', cursive;
+  font-size: 36px;
+  text-align: center;
 }
 
 .header {

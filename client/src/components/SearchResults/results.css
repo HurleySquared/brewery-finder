@@ -1,6 +1,9 @@
 h3 {
   padding: 4px;
   text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: 'Vast Shadow', Cursive;
 }
 
 /* .results-container {
@@ -40,6 +43,7 @@ ul {
   background-color: #f5ac59;
   box-shadow: 4px 4px 10px #3d2203;
   padding: 4px;
+  font-family: Duru;
 }
 
 .brewsList:hover {
